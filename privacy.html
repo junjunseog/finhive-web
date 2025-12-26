@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - FinHive</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+        header {
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 1rem 0;
+        }
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .logo img {
+            height: 40px;
+            display: block;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+        nav a {
+            text-decoration: none;
+            color: #555;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #1a73e8;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 1rem;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #222;
+        }
+        h2 {
+            font-size: 1.8rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            color: #222;
+            border-bottom: 2px solid #1a73e8;
+            padding-bottom: 0.5rem;
+        }
+        h3 {
+            font-size: 1.3rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #444;
+        }
+        p {
+            margin-bottom: 1rem;
+            color: #555;
+        }
+        ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+            color: #555;
+        }
+        .highlight {
+            background-color: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            border-left: 4px solid #1a73e8;
+        }
+        .effective-date {
+            color: #777;
+            font-size: 0.95rem;
+            margin-bottom: 2rem;
+        }
+        footer {
+            background-color: #f8f9fa;
+            border-top: 1px solid #e0e0e0;
+            padding: 2rem 1rem;
+            text-align: center;
+            color: #777;
+            font-size: 0.9rem;
+            margin-top: 3rem;
+        }
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1rem;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            .container {
+                padding: 2rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="FinHive Logo">
+            </a>
+            <ul>
+                <li><a href="index.html#home">홈</a></li>
+                <li><a href="index.html#contact">연락처</a></li>
+                <li><a href="privacy.html">개인정보처리방침</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Privacy Policy (개인정보처리방침)</h1>
+        <p class="effective-date"><strong>시행일:</strong> 2025년 11월 1일</p>
+        
+        <p>FinHive(이하 "회사")는 이용자의 개인정보를 중요하게 생각하며, 개인정보 보호법 및 정보통신망 이용촉진 및 정보보호 등에 관한 법률 등 관련 법령을 준수하고 있습니다. 본 개인정보처리방침은 회사가 제공하는 모바일 애플리케이션 및 웹 서비스(이하 "서비스")에 적용됩니다.</p>
+
+        <h2>1. 수집하는 개인정보 항목</h2>
+        <p>회사는 서비스 제공을 위해 다음과 같은 개인정보를 수집합니다.</p>
+        
+        <h3>1.1 필수 수집 항목</h3>
+        <ul>
+            <li><strong>이메일 주소:</strong> 회원 가입, 로그인 및 본인 확인</li>
+            <li><strong>사용자 이름(닉네임):</strong> 서비스 내 사용자 식별</li>
+            <li><strong>비밀번호:</strong> 계정 보안 (암호화하여 저장)</li>
+        </ul>
+
+        <h3>1.2 선택 수집 항목</h3>
+        <ul>
+            <li><strong>프로필 사진:</strong> 사용자가 직접 업로드한 경우에만 수집</li>
+            <li><strong>채팅 메시지 및 첨부 이미지:</strong> 채팅 서비스 제공을 위해 수집</li>
+        </ul>
+
+        <h3>1.3 자동 수집 항목</h3>
+        <ul>
+            <li><strong>푸시 알림 토큰:</strong> Firebase Cloud Messaging(FCM) 또는 Expo Push Notification을 통한 알림 제공</li>
+            <li><strong>기기 정보:</strong> 기기 모델, OS 버전, 앱 버전 (서비스 최적화 및 오류 분석)</li>
+            <li><strong>서비스 이용 기록:</strong> 접속 로그, 이용 시간, 오류 로그</li>
+        </ul>
+
+        <h3>1.4 향후 도입 예정</h3>
+        <ul>
+            <li><strong>소셜 로그인 정보:</strong> 카카오, 구글 등 소셜 로그인 서비스 이용 시 해당 플랫폼에서 제공하는 이메일, 프로필 정보</li>
+        </ul>
+
+        <h2>2. 개인정보의 수집 및 이용 목적</h2>
+        <p>회사는 수집한 개인정보를 다음의 목적으로만 이용합니다.</p>
+        <ul>
+            <li><strong>회원 관리:</strong> 회원 가입, 로그인, 본인 확인, 회원제 서비스 제공</li>
+            <li><strong>서비스 제공:</strong> 실시간 메시징, 그룹 채팅, 파일 공유, 협업 기능 제공</li>
+            <li><strong>이미지 업로드 및 저장:</strong> 사용자가 명시적으로 업로드한 프로필 사진 및 채팅 이미지를 클라우드 스토리지에 저장</li>
+            <li><strong>푸시 알림 제공:</strong> 새로운 메시지, 멘션, 중요 알림 전송</li>
+            <li><strong>서비스 개선:</strong> 이용 패턴 분석, 오류 수정, 신규 기능 개발</li>
+            <li><strong>고객 지원:</strong> 문의 응대, 불만 처리, 공지사항 전달</li>
+        </ul>
+
+        <h2>3. 카메라 및 사진 접근 권한</h2>
+        <div class="highlight">
+            <p><strong>FinHive는 다음의 목적으로 카메라 및 사진 라이브러리 접근 권한을 요청합니다:</strong></p>
+            <ul>
+                <li><strong>프로필 사진 촬영 및 업로드:</strong> 사용자가 프로필 사진을 설정할 때</li>
+                <li><strong>채팅 이미지 첨부:</strong> 대화 중 이미지를 전송할 때</li>
+            </ul>
+            <p><strong>중요:</strong> 카메라 및 사진 접근은 사용자가 명시적으로 해당 기능을 사용할 때만 요청되며, 사용자가 직접 선택하여 업로드한 이미지만 서버 및 클라우드 스토리지에 저장됩니다. 사용자의 동의 없이 자동으로 사진을 수집하거나 백그라운드에서 접근하지 않습니다.</p>
+        </div>
+
+        <h2>4. 개인정보의 보유 및 이용 기간</h2>
+        <p>회사는 법령에 따른 개인정보 보유·이용 기간 또는 정보주체로부터 개인정보를 수집 시 동의받은 기간 내에서 개인정보를 처리·보유합니다.</p>
+        
+        <h3>4.1 회원 정보</h3>
+        <ul>
+            <li>회원 탈퇴 시까지 보관</li>
+            <li>회원 탈퇴 요청 시 즉시 삭제 (단, 법령에 따라 보관이 필요한 경우 예외)</li>
+        </ul>
+
+        <h3>4.2 채팅 메시지 및 이미지</h3>
+        <ul>
+            <li>사용자가 삭제 요청 시 즉시 삭제</li>
+            <li>회원 탈퇴 시 관련 데이터 삭제</li>
+        </ul>
+
+        <h3>4.3 법령에 따른 보관</h3>
+        <ul>
+            <li>전자상거래 등에서의 소비자 보호에 관한 법률, 통신비밀보호법 등 관련 법령에 따라 일정 기간 보관이 필요한 경우 해당 기간 동안 보관</li>
+        </ul>
+
+        <h2>5. 개인정보의 제3자 제공</h2>
+        <p>회사는 원칙적으로 이용자의 개인정보를 외부에 제공하지 않습니다. 다만, 다음의 경우에는 예외로 합니다.</p>
+        <ul>
+            <li>이용자가 사전에 동의한 경우</li>
+            <li>법령의 규정에 의거하거나, 수사 목적으로 법령에 정해진 절차와 방법에 따라 수사기관의 요구가 있는 경우</li>
+        </ul>
+
+        <h2>6. 개인정보 처리 위탁</h2>
+        <p>회사는 서비스 제공을 위해 다음과 같이 개인정보 처리 업무를 외부에 위탁하고 있습니다.</p>
+        
+        <table style="width: 100%; border-collapse: collapse; margin: 1rem 0;">
+            <thead>
+                <tr style="background-color: #f8f9fa;">
+                    <th style="border: 1px solid #e0e0e0; padding: 0.75rem; text-align: left;">수탁업체</th>
+                    <th style="border: 1px solid #e0e0e0; padding: 0.75rem; text-align: left;">위탁 업무 내용</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="border: 1px solid #e0e0e0; padding: 0.75rem;">Railway, Vercel</td>
+                    <td style="border: 1px solid #e0e0e0; padding: 0.75rem;">서버 호스팅 및 데이터 저장</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #e0e0e0; padding: 0.75rem;">Firebase Cloud Messaging / Expo</td>
+                    <td style="border: 1px solid #e0e0e0; padding: 0.75rem;">푸시 알림 전송</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #e0e0e0; padding: 0.75rem;">클라우드 스토리지 제공업체</td>
+                    <td style="border: 1px solid #e0e0e0; padding: 0.75rem;">이미지 및 파일 저장</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>회사는 위탁 계약 체결 시 개인정보 보호법에 따라 위탁업무 수행 목적 외 개인정보 처리 금지, 기술적·관리적 보호조치, 재위탁 제한, 수탁자에 대한 관리·감독, 손해배상 등 책임에 관한 사항을 계약서 등 문서에 명시하고 수탁자가 개인정보를 안전하게 처리하는지 감독하고 있습니다.</p>
+
+        <h2>7. 개인정보의 파기</h2>
+        <p>회사는 개인정보 보유 기간의 경과, 처리 목적 달성 등 개인정보가 불필요하게 되었을 때에는 지체 없이 해당 개인정보를 파기합니다.</p>
+        
+        <h3>7.1 파기 절차</h3>
+        <ul>
+            <li>이용자가 입력한 정보는 목적 달성 후 별도의 DB로 옮겨져 내부 방침 및 기타 관련 법령에 따라 일정 기간 저장된 후 파기됩니다.</li>
+        </ul>
+
+        <h3>7.2 파기 방법</h3>
+        <ul>
+            <li>전자적 파일 형태: 복구 및 재생이 불가능한 방법으로 영구 삭제</li>
+            <li>종이 문서: 분쇄기로 분쇄하거나 소각</li>
+        </ul>
+
+        <h2>8. 이용자 및 법정대리인의 권리</h2>
+        <p>이용자는 언제든지 다음과 같은 권리를 행사할 수 있습니다.</p>
+        <ul>
+            <li><strong>개인정보 열람 요구</strong></li>
+            <li><strong>개인정보 정정 요구:</strong> 오류가 있을 경우 정정 요청</li>
+            <li><strong>개인정보 삭제 요구:</strong> 회원 탈퇴 또는 특정 데이터 삭제 요청</li>
+            <li><strong>개인정보 처리 정지 요구</strong></li>
+        </ul>
+
+        <div class="highlight">
+            <h3>데이터 삭제 요청 방법</h3>
+            <p>이용자는 다음의 방법으로 개인정보 삭제를 요청할 수 있습니다:</p>
+            <ul>
+                <li><strong>앱 내 설정:</strong> 설정 메뉴 → 계정 관리 → 회원 탈퇴</li>
+                <li><strong>이메일 요청:</strong> dev@finhive.kr로 삭제 요청 메일 발송</li>
+            </ul>
+            <p>요청 접수 후 <strong>7일 이내</strong>에 처리되며, 처리 완료 시 이메일로 안내드립니다.</p>
+        </div>
+
+        <h2>9. 개인정보의 안전성 확보 조치</h2>
+        <p>회사는 개인정보의 안전성 확보를 위해 다음과 같은 조치를 취하고 있습니다.</p>
+        <ul>
+            <li><strong>관리적 조치:</strong> 내부관리계획 수립·시행, 정기적 직원 교육</li>
+            <li><strong>기술적 조치:</strong>
+                <ul>
+                    <li>개인정보처리시스템 등의 접근권한 관리</li>
+                    <li>접근통제시스템 설치</li>
+                    <li>개인정보의 암호화: 비밀번호는 암호화되어 저장 및 관리</li>
+                    <li>HTTPS를 통한 안전한 데이터 전송</li>
+                </ul>
+            </li>
+            <li><strong>물리적 조치:</strong> 전산실, 자료보관실 등의 접근통제</li>
+        </ul>
+
+        <h2>10. 개인정보 보호책임자</h2>
+        <p>회사는 개인정보 처리에 관한 업무를 총괄해서 책임지고, 개인정보 처리와 관련한 정보주체의 불만 처리 및 피해구제 등을 위하여 아래와 같이 개인정보 보호책임자를 지정하고 있습니다.</p>
+        
+        <div class="highlight">
+            <p><strong>개인정보 보호책임자</strong></p>
+            <ul>
+                <li><strong>이메일:</strong> eddy@finhive.kr</li>
+                <li><strong>일반 문의:</strong> dev@finhive.kr</li>
+            </ul>
+            <p>개인정보 관련 문의, 불만 처리, 피해 구제 등에 관한 사항은 위 연락처로 문의해 주시기 바랍니다.</p>
+        </div>
+
+        <h2>11. 개인정보처리방침의 변경</h2>
+        <p>이 개인정보처리방침은 시행일로부터 적용되며, 법령 및 방침에 따른 변경 내용의 추가, 삭제 및 정정이 있는 경우에는 변경사항의 시행 <strong>7일 전</strong>부터 공지사항을 통하여 고지할 것입니다.</p>
+
+        <h2>12. 추가 정보</h2>
+        <p>본 개인정보처리방침은 Google Play 정책 및 대한민국 개인정보 보호법을 준수하여 작성되었습니다. 서비스 이용 중 개인정보 관련 문의사항이 있으시면 언제든지 연락 주시기 바랍니다.</p>
+
+        <p style="margin-top: 2rem; color: #777; font-size: 0.9rem;">최종 수정일: 2025년 11월 1일</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 FinHive. All rights reserved.</p>
+        <p><a href="index.html" style="color: #1a73e8; text-decoration: none;">홈으로 돌아가기</a></p>
+    </footer>
+</body>
+</html>
+
