@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinHive - 협업 커뮤니케이션 서비스</title>
+    <!-- Google Search Console 인증 메타 태그를 아래에 추가하세요 -->
+    <!-- <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE" /> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+        header {
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .logo img {
+            height: 40px;
+            display: block;
+        }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .team-item {
+            text-align: center;
+        }
+        .team-item img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+        .team-item h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #222;
+        }
+        .team-item p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+        nav a {
+            text-decoration: none;
+            color: #555;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #1a73e8;
+        }
+        section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 1rem;
+            min-height: 400px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #222;
+        }
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #222;
+            border-bottom: 2px solid #1a73e8;
+            padding-bottom: 0.5rem;
+        }
+        h3 {
+            font-size: 1.3rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: #444;
+        }
+        p {
+            margin-bottom: 1rem;
+            color: #555;
+        }
+        ul.content-list {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        ul.content-list li {
+            margin-bottom: 0.5rem;
+            color: #555;
+        }
+        .contact-info {
+            background-color: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+        .contact-info p {
+            margin-bottom: 0.5rem;
+        }
+        footer {
+            background-color: #f8f9fa;
+            border-top: 1px solid #e0e0e0;
+            padding: 2rem 1rem;
+            text-align: center;
+            color: #777;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1rem;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            section {
+                padding: 2rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#home" class="logo">
+                <img src="img/logo.png" alt="Finhive Logo">
+            </a>
+            <ul>
+                <li><a href="#home">홈</a></li>
+                <li><a href="#contact">연락처</a></li>
+                <li><a href="#team">팀</a></li>
+                <li><a href="#privacy">개인정보처리방침</a></li>
+                <li><a href="#terms">이용약관</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>FinHive에 오신 것을 환영합니다</h1>
+        <p>FinHive는 팀과 조직의 효율적인 협업을 지원하는 하고자 합니다.</p>
+        
+        <h3>회사 소개</h3>
+        <p>Finhive는 2025년 11월 1일 설립된 기술 기업으로, 현대적인 업무 환경에서 필요한 실시간 소통과 협업 도구를 제공합니다. 우리는 사용자 중심의 직관적인 인터페이스와 안정적인 서비스를 통해 팀의 생산성을 극대화합니다.</p>
+        
+        <h3>서비스 소개</h3>
+        <p>FinHive는 웹/모바일 애플리케이션을 기반으로 다음과 같은 기능을 제공합니다:</p>
+        <ul class="content-list">
+            <li>실시간 메시징 및 그룹 채팅</li>
+            <li>파일 공유 및 문서 협업</li>
+            <li>프로젝트 관리 및 업무 추적</li>
+            <li>화상 회의 및 음성 통화</li>
+            <li>알림 및 일정 관리</li>
+        </ul>
+        
+        <h3>공식 웹사이트 안내</h3>
+        <p>본 웹사이트는 FinHive의 공식 기업 웹사이트입니다. 서비스 관련 문의 및 지원은 아래 연락처 섹션을 통해 가능합니다.</p>
+    </section>
+
+    <section id="contact">
+        <h2>연락처</h2>
+        <p>FinHive 서비스에 대한 문의사항이나 지원이 필요하신 경우 아래 연락처로 문의해 주시기 바랍니다.</p>
+        
+        <div class="contact-info">
+            <p><strong>회사명:</strong> 주식회사핀하이브</p>
+            <p><strong>이메일:</strong> dev@finhive.kr</p>
+            <p><strong>업무 시간:</strong> 평일 09:30 - 18:00 (KST)</p>
+        </div>
+        
+        <p style="margin-top: 1.5rem;">고객 여러분의 소중한 의견을 기다리고 있습니다. 서비스 개선을 위해 항상 노력하겠습니다.</p>
+    </section>
+
+    <section id="team">
+        <h2>팀</h2>
+        <p>FinHive는 다음과 같은 핵심 가치를 바탕으로 일합니다.</p>
+        
+        <div class="team-grid">
+            <div class="team-item">
+                <img src="img/object.png" alt="높은 목표와 전략적 사고">
+                <h4>높은 목표와 전략적 사고</h4>
+                <p>회사의 목표·우선순위·성과 지표를 정확히 이해하고, 자신의 업무를 그 기준에 맞게 조정한다.</p>
+            </div>
+            <div class="team-item">
+                <img src="img/develop.png" alt="빠른 실행과 검증">
+                <h4>빠른 실행과 검증</h4>
+                <p>리소스 대비 임팩트가 큰 해결 방식을 설계하고 설득한다. 그리고 전략을 데이터로 검증해 결정한다.</p>
+            </div>
+            <div class="team-item">
+                <img src="img/reward.png" alt="높은 임팩트">
+                <h4>높은 임팩트</h4>
+                <p>기여가 투명하게 보상으로 돌아오는 문화를 만든다.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="privacy">
+        <h2>개인정보처리방침</h2>
+        <p><strong>시행일:</strong> 2025년 11월 1일</p>
+        
+        <h3>1. 개인정보의 수집 및 이용 목적</h3>
+        <p>FinHive는 다음의 목적을 위하여 개인정보를 처리합니다. 처리한 개인정보는 다음의 목적 이외의 용도로는 사용되지 않으며, 이용 목적이 변경될 시에는 사전 동의를 구할 것입니다.</p>
+        <ul class="content-list">
+            <li>회원 가입 및 관리: 회원 가입 의사 확인, 회원제 서비스 제공, 본인 식별 및 인증</li>
+            <li>서비스 제공: 콘텐츠 제공, 맞춤 서비스 제공, 본인 인증</li>
+            <li>고충 처리: 민원인의 신원 확인, 민원 사항 확인, 사실 조사를 위한 연락 및 통지</li>
+        </ul>
+
+        <h3>2. 수집하는 개인정보의 항목</h3>
+        <p>FinHive는 서비스 제공을 위해 필요한 최소한의 개인정보를 수집합니다.</p>
+        <ul class="content-list">
+            <li>필수 항목: 이메일 주소, 비밀번호, 이름</li>
+            <li>선택 항목: 프로필 사진, 전화번호</li>
+            <li>자동 수집 항목: 서비스 이용 기록, 접속 로그, 기기 정보</li>
+        </ul>
+
+        <h3>3. 개인정보의 보유 및 이용 기간</h3>
+        <p>회사는 법령에 따른 개인정보 보유 및 이용 기간 또는 정보주체로부터 개인정보를 수집 시에 동의받은 개인정보 보유 및 이용 기간 내에서 개인정보를 처리 및 보유합니다.</p>
+        <ul class="content-list">
+            <li>회원 탈퇴 시까지 (단, 관계 법령 위반에 따른 수사 및 조사 등이 진행 중인 경우 해당 수사 및 조사 종료 시까지)</li>
+            <li>관련 법령에 의한 정보 보유 사유가 있는 경우 해당 기간까지 보관</li>
+        </ul>
+
+        <h3>4. 개인정보의 제3자 제공</h3>
+        <p>회사는 원칙적으로 이용자의 개인정보를 외부에 제공하지 않습니다. 다만, 아래의 경우에는 예외로 합니다.</p>
+        <ul class="content-list">
+            <li>이용자가 사전에 동의한 경우</li>
+            <li>법령의 규정에 의거하거나 수사 목적으로 법령에 정해진 절차와 방법에 따라 수사기관의 요구가 있는 경우</li>
+        </ul>
+
+        <h3>5. 정보주체의 권리 및 의무</h3>
+        <p>이용자는 개인정보주체로서 다음과 같은 권리를 행사할 수 있습니다.</p>
+        <ul class="content-list">
+            <li>개인정보 열람 요구</li>
+            <li>오류 등이 있을 경우 정정 요구</li>
+            <li>삭제 요구</li>
+            <li>처리 정지 요구</li>
+        </ul>
+
+        <h3>6. 개인정보 보호책임자</h3>
+        <p>개인정보 처리에 관한 업무를 총괄해서 책임지고, 개인정보 처리와 관련한 정보주체의 불만 처리 및 피해구제를 위하여 아래와 같이 개인정보 보호책임자를 지정하고 있습니다.</p>
+        <p><strong>이메일:</strong> eddy@finhive.kr</p>
+
+        <h3>7. 개인정보처리방침 변경</h3>
+        <p>이 개인정보처리방침은 시행일로부터 적용되며, 법령 및 방침에 따른 변경 내용의 추가, 삭제 및 정정이 있는 경우에는 변경사항의 시행 7일 전부터 공지사항을 통하여 고지할 것입니다.</p>
+    </section>
+
+    <section id="terms">
+        <h2>이용약관</h2>
+        <p><strong>시행일:</strong> 2025년 11월 1일</p>
+
+        <h3>제1조 (목적)</h3>
+        <p>본 약관은 FinHive(이하 "회사")가 제공하는 모바일 애플리케이션 및 관련 서비스(이하 "서비스")의 이용과 관련하여 회사와 이용자 간의 권리, 의무 및 책임 사항, 기타 필요한 사항을 규정함을 목적으로 합니다.</p>
+
+        <h3>제2조 (정의)</h3>
+        <ul class="content-list">
+            <li>"서비스"란 회사가 제공하는 커뮤니케이션 및 협업 플랫폼을 의미합니다.</li>
+            <li>"이용자"란 본 약관에 따라 회사가 제공하는 서비스를 이용하는 회원 및 비회원을 말합니다.</li>
+            <li>"회원"이란 회사와 서비스 이용 계약을 체결하고 이용자 아이디를 부여받은 자를 의미합니다.</li>
+        </ul>
+
+        <h3>제3조 (약관의 효력 및 변경)</h3>
+        <p>본 약관은 서비스를 이용하고자 하는 모든 이용자에 대하여 그 효력을 발생합니다. 회사는 필요한 경우 관련 법령을 위배하지 않는 범위에서 본 약관을 변경할 수 있으며, 약관이 변경되는 경우 변경 사항을 시행일자 7일 전부터 공지합니다.</p>
+
+        <h3>제4조 (서비스의 제공)</h3>
+        <p>회사는 다음과 같은 서비스를 제공합니다.</p>
+        <ul class="content-list">
+            <li>실시간 메시징 및 커뮤니케이션 서비스</li>
+            <li>파일 공유 및 협업 도구</li>
+            <li>프로젝트 관리 및 업무 추적 기능</li>
+            <li>기타 회사가 정하는 서비스</li>
+        </ul>
+
+        <h3>제5조 (회원 가입)</h3>
+        <p>이용자는 회사가 정한 가입 양식에 따라 회원 정보를 기입한 후 본 약관에 동의한다는 의사 표시를 함으로써 회원 가입을 신청합니다. 회사는 가입 신청자의 신청에 대하여 승낙함을 원칙으로 합니다. 다만, 다음 각 호에 해당하는 경우 회사는 가입을 거절하거나 사후에 이용 계약을 해지할 수 있습니다.</p>
+        <ul class="content-list">
+            <li>타인의 명의를 도용한 경우</li>
+            <li>허위 정보를 기재한 경우</li>
+            <li>사회의 안녕 질서 또는 미풍양속을 저해할 목적으로 신청한 경우</li>
+        </ul>
+
+        <h3>제6조 (이용자의 의무)</h3>
+        <p>이용자는 다음 행위를 하여서는 안 됩니다.</p>
+        <ul class="content-list">
+            <li>신청 또는 변경 시 허위 내용의 등록</li>
+            <li>타인의 정보 도용</li>
+            <li>회사가 게시한 정보의 변경</li>
+            <li>회사가 정한 정보 이외의 정보(컴퓨터 프로그램 등) 등의 송신 또는 게시</li>
+            <li>회사 및 기타 제3자의 저작권 등 지적재산권에 대한 침해</li>
+            <li>회사 및 기타 제3자의 명예를 손상시키거나 업무를 방해하는 행위</li>
+            <li>외설 또는 폭력적인 메시지, 화상, 음성, 기타 공서양속에 반하는 정보를 서비스에 공개 또는 게시하는 행위</li>
+        </ul>
+
+        <h3>제7조 (서비스의 중단)</h3>
+        <p>회사는 컴퓨터 등 정보통신설비의 보수점검, 교체 및 고장, 통신의 두절 등의 사유가 발생한 경우에는 서비스의 제공을 일시적으로 중단할 수 있습니다.</p>
+
+        <h3>제8조 (면책 조항)</h3>
+        <p>회사는 천재지변 또는 이에 준하는 불가항력으로 인하여 서비스를 제공할 수 없는 경우에는 서비스 제공에 관한 책임이 면제됩니다. 회사는 이용자의 귀책사유로 인한 서비스 이용의 장애에 대하여 책임을 지지 않습니다.</p>
+
+        <h3>제9조 (준거법 및 재판관할)</h3>
+        <p>본 약관과 관련된 사항에 대하여는 대한민국 법을 준거법으로 합니다. 서비스 이용으로 발생한 분쟁에 대해 소송이 제기될 경우 회사의 본사 소재지를 관할하는 법원을 관할 법원으로 합니다.</p>
+
+        <h3>부칙</h3>
+        <p>본 약관은 2025년 11월 1일부터 시행됩니다.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 FinHive. All rights reserved.</p>
+        <p>본 웹사이트는 FinHive의 공식 기업 웹사이트입니다.</p>
+    </footer>
+</body>
+</html>
+
